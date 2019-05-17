@@ -25,7 +25,7 @@ export default ({
     router.afterEach(function (to) {
       let current = to.fullPath;
       if (IGNORE_HASH) {
-        current = current.split('#', 1)[0];
+        current = to.path;
         if (last_url === current) {
           return;
         }
