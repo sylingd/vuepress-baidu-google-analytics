@@ -5,10 +5,9 @@ const ga = require('./google');
 export default ({
   router
 }) => {
-  // Baidu tongji integration
   if (process.env.NODE_ENV === 'production' && typeof window !== 'undefined') {
     const cb = [];
-    let last_url = '';
+    let last_url = window.location.pathname;
     if (HM_ID) {
       hm.init(HM_ID);
       cb.push(hm.callback);
