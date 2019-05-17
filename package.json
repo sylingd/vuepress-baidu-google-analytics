@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-baidu-google-analytics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Google-analytics and Baidu-tongji plugin for vuepress",
   "main": "index.js",
   "publishConfig": {
