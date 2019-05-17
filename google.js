@@ -18,7 +18,7 @@ module.exports = {
     ga('send', 'pageview')
   },
   callback(to) {
-    ga('set', 'page', to.fullPath)
+    ga('set', 'page', to)
     ga('send', 'pageview')
   }
 }

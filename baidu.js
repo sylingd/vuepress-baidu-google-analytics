@@ -7,6 +7,6 @@ module.exports = {
     s.parentNode.insertBefore(hm, s)
   },
   callback(to) {
-    _hmt.push(['_trackPageview', to.fullPath])
+    _hmt.push(['_trackPageview', to])
   }
 }
