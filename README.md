@@ -14,11 +14,12 @@ npm install -D vuepress-baidu-google-analytics
 
 ```javascript
 module.exports = {
-  plugins: ['vuepress-baidu-google-analytics', {
-    hm: 'abcdefghijklmnopqrstuvwxyz123456',
-    ga: 'abcdefghijklmnopqrstuvwxyz123456',
-    ignore_hash: false
-  }]
+  plugins: [
+    ['vuepress-baidu-google-analytics', {
+      hm: '44b41bc63385a6b27e692272bb1fb393',
+      ignore_hash: false
+    }]
+  ]
 }
 ```
 
