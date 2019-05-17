@@ -1,6 +1,10 @@
 # vuepress-plugin-baidu-google-analytics
 
-> Google analytics and Baidu tongji plugin for vuepress
+[![vuepress](https://img.shields.io/badge/vuepress-%3E%3D%201.0-brightgreen.svg)](https://v1.vuepress.vuejs.org/)
+[![npm](https://img.shields.io/npm/v/vuepress-plugin-baidu-google-analytics.svg)](https://www.npmjs.com/package/vuepress-plugin-baidu-google-analytics)
+![npm](https://img.shields.io/npm/dt/vuepress-plugin-baidu-google-analytics.svg)
+
+Google analytics and Baidu tongji plugin for vuepress
 
 ## Install
 
