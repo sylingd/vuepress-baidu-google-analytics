@@ -31,7 +31,9 @@ export default ({
         }
         last_url = current;
       }
-      cb.forEach(it => it.call(this, current));
+      cb.forEach(function (it) {
+        it.call(this, current)
+      });
     });
   }
 }
