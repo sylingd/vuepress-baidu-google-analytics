@@ -1,0 +1,25 @@
+{
+  "name": "vuepress-baidu-google-analytics",
+  "version": "1.0.0",
+  "description": "Google-analytics and Baidu-tongji plugin for vuepress",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylingd/vuepress-baidu-google-analytics.git"
+  },
+  "keywords": [
+    "documentation",
+    "vue",
+    "vuepress",
+    "generator"
+  ],
+  "author": "ShuangYa <i@sylingd.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sylingd/vuepress-baidu-google-analytics/issues"
+  },
+  "homepage": "https://github.com/sylingd/vuepress-baidu-google-analytics"
+}
