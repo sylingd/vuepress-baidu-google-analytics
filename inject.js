@@ -7,7 +7,7 @@ export default ({
 }) => {
   if (process.env.NODE_ENV === 'production' && typeof window !== 'undefined') {
     const cb = [];
-    let last_url = window.location.pathname;
+    let last_url = null;
     if (HM_ID) {
       hm.init(HM_ID);
       cb.push(hm.callback);
@@ -25,11 +25,17 @@ export default ({
       let current = to.fullPath;
       if (IGNORE_HASH) {
         current = to.path;
-        if (last_url === current) {
-          return;
-        }
-        last_url = current;
       }
+      // vuepress会在首次进入页面时回调此函数，但首次不应统计
+      if (last_url === null) {
+        last_url = current;
+        return;
+      }
+      // URL不变化的情况下不统计
+      if (last_url === current) {
+        return;
+      }
+      last_url = current;
       cb.forEach(function (it) {
         it.call(this, current)
       });
